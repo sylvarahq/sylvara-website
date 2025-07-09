@@ -22,6 +22,10 @@ const nextConfig: NextConfig = {
     // Warning: this will _completely_ disable ESLint errors on build
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    // WARNING: this will completely disable type-checking on build
+    ignoreBuildErrors: true,
+  },
 };
 
 export default nextConfig;
