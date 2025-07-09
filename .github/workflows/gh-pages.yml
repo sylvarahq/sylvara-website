@@ -1,0 +1,39 @@
+name: Deploy Next.js to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]    # or whichever branch you develop on
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build & Export
+        env:
+          NEXT_PUBLIC_BASE_PATH: '/your-repo'
+        run: |
+          npm run build
+          npm run export
+
+      - name: Create .nojekyll
+        run: touch out/.nojekyll
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          # optional: custom domain support
+          # silent: true

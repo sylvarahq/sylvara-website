@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export',
   assetPrefix: '/',
+  trailingSlash: true,
   /* config options here */
   images: {
     domains: ['res.cloudinary.com'],
