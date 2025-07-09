@@ -20,7 +20,7 @@ interface FeatureStepsProps {
   title?: string
   autoPlayInterval?: number
   imageHeight?: string
-  heroRef: React.RefObject<HTMLElement>
+  heroRef: React.RefObject<HTMLElement | null>
   showControls?: boolean
   showProgressBar?: boolean
   enableKeyboardNavigation?: boolean
