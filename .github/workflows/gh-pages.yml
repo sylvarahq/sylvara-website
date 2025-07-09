@@ -22,7 +22,7 @@ jobs:
 
       - name: Build & Export
         env:
-          NEXT_PUBLIC_BASE_PATH: '/your-repo'
+          NEXT_PUBLIC_BASE_PATH: '/'
         run: |
           npm run build
           npm run export
@@ -31,7 +31,7 @@ jobs:
         run: touch out/.nojekyll
 
       - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v5
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
