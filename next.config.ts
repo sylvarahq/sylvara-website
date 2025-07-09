@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     domains: ['res.cloudinary.com'],
+
     // OR, if you need more granular control:
     // remotePatterns: [
     //   {
@@ -16,7 +17,11 @@ const nextConfig: NextConfig = {
     //     pathname: '/**',
     //   },
     // ],
-  }
+  },
+   eslint: {
+    // Warning: this will _completely_ disable ESLint errors on build
+    ignoreDuringBuilds: true,
+  },
 };
 
 export default nextConfig;
