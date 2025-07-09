@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: 'export',
-  assetPrefix: '/',
+  assetPrefix: '/sylvara-website/',
   trailingSlash: true,
   /* config options here */
   images: {
