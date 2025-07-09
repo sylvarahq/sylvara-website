@@ -90,7 +90,7 @@ export default function Navbar({ heroRef }: { heroRef: React.RefObject<HTMLEleme
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="fixed top-2 left-0 right-0 z-50 px-2"
+      className="fixed top-2 left-0 right-0 z-50 px-2 hidden md:block"
       style={{ WebkitBackdropFilter: "blur(16px)" }}
     >
       {/* Desktop Navigation */}
