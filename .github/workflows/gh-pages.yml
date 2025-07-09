@@ -25,7 +25,7 @@ jobs:
 
       - name: Build & Export
         env:
-          NEXT_PUBLIC_BASE_PATH: '/sylvara-website/'
+          NEXT_PUBLIC_BASE_PATH: '/'
         run: |
           npm run build
 
