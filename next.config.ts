@@ -7,6 +7,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     domains: ['res.cloudinary.com'],
+    unoptimized: true
 
     // OR, if you need more granular control:
     // remotePatterns: [

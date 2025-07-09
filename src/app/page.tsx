@@ -14,19 +14,19 @@ const features = [
     step: 'Step 1', 
     title: 'Autonomous Plant Care',
     content: 'Charge the device, fill the water tank and set aside for months.', 
-    image: 'https://res.cloudinary.com/dppdu4sip/image/upload/v1752065080/Slide_1_a1t0ub.png' 
+    image: '/slide1.png' 
   },
   { 
     step: 'Step 2',
     title: 'Environmental Insights',
     content: "Monitor and track your plants' habitat and identify potential shortcomings.",
-    image: 'https://res.cloudinary.com/dppdu4sip/image/upload/v1752065226/Prototype_v5_v5ssex_myoz5z.png'
+    image: '/slide2.png'
   },
   { 
     step: 'Step 3',
     title: 'Centralised Control',
     content: 'Monitor the status and health of all your Sylvara units from one App.',
-    image: 'https://res.cloudinary.com/dppdu4sip/image/upload/v1752065103/Prototype_v5_v5_indoorBWAHAH_hbcqms.png'
+    image: '/slide3.png'
   },
 ]
 
