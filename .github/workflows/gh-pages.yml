@@ -25,7 +25,6 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: '/'
         run: |
           npm run build
-          npm run export
 
       - name: Create .nojekyll
         run: touch out/.nojekyll
