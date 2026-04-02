@@ -9,8 +9,8 @@ export default function JoinWaitlist() {
   const [loading, setLoading] = useState(false);
 
   // Supabase credentials from environment
-  const supabaseUrl = "https://bkocujroynyjvpyjrefn.supabase.co"!;
-  const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJrb2N1anJveW55anZweWpyZWZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIwNDA4NTEsImV4cCI6MjA2NzYxNjg1MX0.9E34O8vPkrip_seiUjvO4L8Ac1zCL7xxBtH6QN2yilg"!;
+  const supabaseUrl = "https://sbaorssigzebhjbhaets.supabase.co"!;
+  const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNiYW9yc3NpZ3plYmhqYmhhZXRzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU4MjI5NjcsImV4cCI6MjA4MTM5ODk2N30.oSCd-BkTa5Zmvxoi18J10y7KdqUC8bnl7iyXxxyj7gk"!;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
