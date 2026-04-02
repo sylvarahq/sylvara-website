@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import posthog from "posthog-js";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function JoinWaitlistShowcase() {
@@ -36,6 +37,7 @@ export default function JoinWaitlistShowcase() {
       }
 
       setSubmitted(true);
+      posthog.capture('waitlist_signup');
     } catch (error) {
       console.error('Error adding to waitlist:', error);
       // TODO: show user-friendly error message
